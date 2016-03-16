@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  vertical-align: middle;
 
   font: normal 100%/1.5 sans-serif;
 }
@@ -19,6 +20,7 @@ body {
 
 .robot {
   width: 320px;
+  position: relative;
 }
 
 .robot-body {
@@ -27,9 +29,30 @@ body {
 
 .robot-brain {
   width: 46px;
+  position: absolute;
+  top: 5px;
+  left: 8.5em;
 }
 
-.robot-head-right,
+.robot-head-right {
+  width: 125px;
+  position: absolute;
+  top: -2.4em;
+  right: 2.25em;
+}
+
 .robot-head-left {
   width: 125px;
+  position: absolute;
+  top: -2.4em;
+  left: 2.25em;
+}
+
+.robot-head-right.hover {
+  position: absolute;
+  right: .25em;
+}
+
+.robot-head-left.hover {
+  left: 0;
 }
